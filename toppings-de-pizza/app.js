@@ -64,11 +64,21 @@
 // console.log(listaDeToppings.nextSibling)
 
 
+// Eventos con onevent en HTML 
 
+// function mostrarClic(topping) {
+//   console.log(topping)
+// }
 
+//  .addEventListener()
 
+const toppings = document.getElementsByClassName('topping')
 
-
+for (const topping of toppings) {
+  topping.addEventListener('click', (e) => {
+    console.log(e.target.innerText)
+  });
+}
 
 
 
